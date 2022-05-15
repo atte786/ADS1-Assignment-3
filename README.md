@@ -26,3 +26,13 @@ for i in range(len(clmns)):
     plt.legend(loc="best")
     plt.grid()
     plt.show()
+for i in range(len(clmns)):
+    plt.figure(figsize=(8,3))
+    plt.title('Electricity production from coal source for {}'.format(clmns[i]))
+    plt.plot(my_dataframe2[clmns[i]],"{}D-".format(clrs[i]),label=clmns[i])
+    plt.xlabel("Year")
+    plt.xticks(rotation=90)
+    plt.ylabel("Electricity production")
+    plt.legend(loc="best")
+    plt.grid()
+    plt.show()
