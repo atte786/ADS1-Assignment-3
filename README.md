@@ -11,3 +11,6 @@ ind2mn=['Electricity production from coal source']
 my_dataframe1  = wb.data.DataFrame(ind1, cc, mrv=50).T
 my_dataframe1=my_dataframe1.fillna(my_dataframe1.mean())
 my_dataframe1.head()
+my_dataframe2  = wb.data.DataFrame(ind2, cc, mrv=50).T
+my_dataframe2=my_dataframe2.fillna(my_dataframe2.mean())
+my_dataframe2.head()
